@@ -31,6 +31,11 @@
         </a>
       </div>
 
+      <!--  
+        Add this to current page for screen readers
+        <span class="sr-only">(current)</span> 
+        -->
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -46,14 +51,15 @@
               <a class="dropdown-item" href="yourstory.html">Tell Your Story</a>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="donate.html">Donate<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
           </li>
         </ul>
         <ul class="navbar-nav">
+
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
                 class="fas fa-user-circle"></i></a>
@@ -79,65 +85,37 @@
     </div>
   </nav>
 
-  <div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-login">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Member Login</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <i class="fa fa-envelope"></i>
-              <input type="text" class="form-control" placeholder="Email" required="required">
-            </div>
-            <div class="form-group">
-              <i class="fa fa-lock"></i>
-              <input type="password" class="form-control" placeholder="Password" required="required">
-            </div>
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
-            </div>
-          </form>
-
-        </div>
-        <div class="modal-footer">
-          <a href="#">Forgot Password?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="main">
-    <div class="container mt-5">
-      <div class="jumbotron">
-        <div>
-          <h2 class="d-flex justify-content-center">Donate</h2>
-          <hr class="jumbohr">
-          <p>
-            Andy Fancher Presents has been funded out-of-pocket since it's start in 2015. Andy wants to continue
-            preserving the fading stories of our "greatest generation." However, this can only be accomplished with
-            your
-            help. If everyone contributed at least one dollar, the project can and will continue. This is a
-            time-sensitive mission, with retired service members fading at a rapid rate. Now is the time to ensure
-            these
-            legacies are honored for the next generation.
-          </p>
-          <p class="d-flex justify-content-center font-weight-bold">IF YOU WISH TO PRESERVE MORE WWII STORIES, PLEASE
-            CONSIDER DONATING:</p>
-          <div class="row d-flex justify-content-around">
-            <a href="https://www.patreon.com/AndyFancher"><img class="patreon" src="img/patreon.png" alt=""></a>
-            <a href="https://www.gofundme.com/AndyFancher"><img class="gofundme" src="img/gofundme.png" alt=""></a>
-            <a href="https://www.paypal.com/us/home"><img class="paypal" src="img/paypal.png" alt=""></a>
-          </div>
-          <div>
-            <br><br>
-            <p class="d-flex justify-content-center font-weight-bold">HONORARY CONTRIBUTORS</p>
-            <p class="d-flex justify-content-center">• David & Cindy Croney • Bridget Sherman • David Joiner •</p>
+  <div>
+    <div class="signup-form">
+      <form action="/examples/actions/confirmation.php" method="post">
+        <h2>Register</h2>
+        <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-6"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+                required="required"></div>
+            <div class="col-sm-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                required="required"></div>
           </div>
         </div>
-      </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of
+              Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+        </div>
+      </form>
+      <div class="text-center">Already have an account? <a class="text-dark" href="#">Sign in</a></div>
     </div>
   </div>
 

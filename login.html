@@ -16,8 +16,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/social-share-kit.css" type="text/css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/social-share-kit.js"></script>
   <script src="js/social-share-kit.min.js"></script>
   <link rel="shortcut icon" type="img/png" href="img/favicon.ico" />
@@ -31,13 +31,18 @@
         </a>
       </div>
 
+      <!--  
+        Add this to current page for screen readers
+        <span class="sr-only">(current)</span> 
+        -->
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="allstories.html" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">Stories</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="allstories.html">All Stories</a>
@@ -47,7 +52,7 @@
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="donate.html">Donate</a>
@@ -80,6 +85,7 @@
     </div>
   </nav>
 
+  <!-- Modal HTML -->
   <div id="myModal" class="modal fade">
     <div class="modal-dialog modal-login">
       <div class="modal-content">
@@ -90,8 +96,8 @@
         <div class="modal-body">
           <form action="/examples/actions/confirmation.php" method="post">
             <div class="form-group">
-              <i class="fa fa-envelope"></i>
-              <input type="text" class="form-control" placeholder="Email" required="required">
+              <i class="fa fa-user"></i>
+              <input type="text" class="form-control" placeholder="Username" required="required">
             </div>
             <div class="form-group">
               <i class="fa fa-lock"></i>
@@ -110,65 +116,19 @@
     </div>
   </div>
 
-  <div class="main">
-    <div class="container">
-      <div class="jumbotron mt-5">
-        <h2 class="d-flex justify-content-center">The Host & Program</h2> <!-- Our Vision (?) -->
-        <hr class="jumbohr" />
-        <img class="aboutpic" src="img/about.jpg" />
-        <div>
-          <p>
-            Andrew Fancher’s interest in WWII began when he was nine years old.
-            While sifting through old family photographs, he stumbled on one of a
-            young man in Army uniform. Handwritten on the back of this old black
-            and white postcard was “Italy, 1945.” Andy quickly discovered this
-            individual was his late-great grandfather, Gene T. Fancher. Being
-            young, he had many questions regarding this individual’s service, but
-            very few answers from the family. As it turns out, Gene shared no
-            detail of his personal WWII experience before his early death in 1970.
-            And so, because of the unknown, Andy Fancher’s curiousity in this
-            momentous war began.
-          </p>
-          <p>
-            He went online regularly and watched countless documentaries on the
-            history channel. He realized the significance of our Allied powers’
-            victory and knew we as a society were in great debt to these WWII
-            veterans. However, Andy felt something was missing from society; the
-            first-hand accounts of the men and women who lived it. In short,
-            Fancher felt a calling to meet his heroes, and capture their stories.
-            He created a Youtube page under his name and designated the project
-            Andy Fancher Presents. One month into age 16, his first WWII veteran
-            was interviewed. That was nearly two years ago. Andy is now 19, and
-            currently pursuing a degree in broadcast journalism. He has spoken
-            with WWII veterans from all walks of life, from all military branches,
-            from all combat theaters. A handful of these 90+ year-old service
-            members have become more than just his heroes, but family.
-          </p>
-          <p>
-            Andy has attended book signings, birthday parties, routine lunches,
-            car shows, and visits to the VA Hospital. Andy Fancher Presents has
-            been featured on NBC 5, Dallas Morning News, FOX 4, CBS 11, and NBC
-            National News with Lester Holt. Andy’s project has picked up great
-            speed, and won’t be slowing down anytime soon. He will continue to do
-            the best he can, with all he’s got, to preserve the fading stories of
-            our greatest generation.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <br><br><br><br>
-  <footer class="footer bg-darker text-light">
-    <div class="ssk-group ssk-md d-flex justify-content-center">
-      <a href="https://www.youtube.com/AndyFancher" class="ssk ssk-youtube"></a>
-      <a href="https://www.instagram.com/realandyfancher/" class="ssk ssk-instagram"></a>
-      <a href="https://www.facebook.com/RealAndyFancher/" class="ssk ssk-facebook"></a>
-      <a href="https://twitter.com/RealAndyFancher" class="ssk ssk-twitter"></a>
-      <a href="https://www.linkedin.com/in/andrew-fancher-558622158/" class="ssk ssk-linkedin"></a>
-    </div>
-    <p>© 2018 Chase Shields. All Rights Reserved.</p>
-  </footer>
+  <div class="">
+    <footer class="bg-dark text-light">
+      <div class="ssk-group ssk-md d-flex justify-content-center">
+        <a href="https://www.youtube.com/AndyFancher" class="ssk ssk-youtube"></a>
+        <a href="https://www.instagram.com/realandyfancher/" class="ssk ssk-instagram"></a>
+        <a href="https://www.facebook.com/RealAndyFancher/" class="ssk ssk-facebook"></a>
+        <a href="https://twitter.com/RealAndyFancher" class="ssk ssk-twitter"></a>
+        <a href="https://www.linkedin.com/in/andrew-fancher-558622158/" class="ssk ssk-linkedin"></a>
+      </div>
+      <p>© 2018 Chase Shields. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 
 </html>
