@@ -1,0 +1,163 @@
+/* 
+CSS Stylesheet ©2018
+*/
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+.jumbohr {
+    max-width: 840px;
+}
+a {
+    color: #212529;
+}
+a:hover {
+    color: #565f68;
+    text-decoration: none;
+}
+.bg-military {
+    background-color: #515547;
+}
+.navbar-brand {
+    font-weight: 500;
+}
+.nav-item {
+    margin-right: .5em;
+}
+.today {
+    font-weight: 600;
+}
+.toplink {
+    font-weight: 700;
+}
+.display-3 {
+    font-weight: 400;
+}
+.fa-user-circle {
+    font-size: 20px;
+    margin-left: 0px;
+}
+.fa-search {
+    font-size: 18px;
+}
+.jumbotron>div>p {
+    text-align: justify;
+    font-size: 16px;
+    padding: 10px 55px 0px 55px;
+}
+.aboutpic {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin: 17px 56px 0px 12px;
+}
+.patreon {
+    height: 80px;
+    width: 260px;
+}
+.gofundme {
+    height: 90px;
+    width: 270px;
+}
+.paypal {
+    height: 70px;
+    width: 240px;
+}
+.form>.container {
+    max-width: 700px;
+}
+.main>.container{
+    max-width: 1000px;
+}
+.card {
+    height: 465px;
+}
+.card-img-top {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    height: 200px;
+}
+.btn-outline-warning {
+    color: ffc107;
+    background-color: #ffffff00;
+    border-color: #ffc107; /*set the color you want here*/
+}
+.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning:active, 
+.btn-outline-warning.active, .open>.dropdown-toggle.btn-outline-warning {
+    color: #fff;
+    background-color: #ffc107;
+    border-color: #ffc107; /*set the color you want here*/
+}
+.log {
+    font-size: 1.1em;
+}
+.fa-user-circle {
+    font-size: 1.5em;
+}
+.btn1 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.btn2 {
+    position: absolute;
+    left: 142px;
+    bottom: 20px;
+}
+
+.btn3 {
+    position: absolute;
+    padding: 4px 8px;
+    font-size: 18px;
+    right: 10px;
+    bottom: 10px;
+    color: #212529;
+}
+.btn3:hover {
+    color: #69747e;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+footer>p {
+    text-align: center;
+    margin-top: 2.2em;
+}
+
+@media (min-width:576px) {
+    .card-columns {
+      column-count: 1;
+    }
+}
+/* 
+@media (min-width:768px) {
+    .card-columns {
+        column-count: 2;
+    }
+} 
+*/
+@media (min-width:992px) {
+    .card-columns {
+      column-count: 2;
+    }
+}
+@media (min-width:1200px) {
+    .card-columns {
+      column-count: 3;
+    }
+}
