@@ -326,14 +326,14 @@ div>.card-body {
 .btn-outline-warning {
     color: ffc107;
     background-color: #ffffff00;
-    border-color: #ffc107; /*set the color you want here*/
+    border-color: #ffc107; 
 }
 .btn-outline-warning:hover, .btn-outline-warning:focus, 
 .btn-outline-warning:active, .btn-outline-warning.active, 
 .open>.dropdown-toggle.btn-outline-warning {
     color: #fff;
     background-color: #ffc107;
-    border-color: #ffc107; /*set the color you want here*/
+    border-color: #ffc107;
 }
 .btn-outline-secondary {
     background-color: white;
